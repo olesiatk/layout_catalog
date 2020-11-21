@@ -13,11 +13,17 @@
   border-radius: 5px;
 
   &__photo {
-    width: 160px;
-    height: 134px;
-    object-position: center;
-    object-fit: contain;
-    margin: 15px auto 30px;
+    margin: 0 auto 15px;
+    width: 166px;
+    height: 164px;
+    padding: 12px 0;
+    border: 3px solid #fff;
+    transition: transform 1s ease-in;
+  }
+
+  &__photo:hover {
+    transform: scale(1.2);
+    border: 3px solid #f3f3f3;
   }
 
   &__info {
@@ -65,28 +71,27 @@
     height: 40px;
     background: $linkColor;
     border-radius: 5px;
-    border-style: none;
+    border: 1px solid $linkColor;
     font-weight: bold;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    transition: 1s;
+  }
+
+  &__button:hover {
+    background-color: #fff;
   }
 
   &__button-link {
     color: #fff;
     text-decoration: none;
     line-height: 40px;
+    transition: 1s;
   }
 
-  &__button:hover {
-    background-color: #fff;
-    border: 1px solid $linkColor;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-
-  &__button-link:hover {
+  &__button:hover &__button-link {
     color: $linkColor;
   }
 }
