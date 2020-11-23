@@ -1,23 +1,18 @@
 .nav {
   &__list {
-    display: flex;
-    align-self: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(8, auto);
     margin: 0;
     padding: 0;
   }
 
   &__item {
-    display: inline;
-    margin-left: 20px;
-  }
-
-  &__item:nth-child(1) {
-    margin: 0;
+    display: grid;
   }
 
   &__link {
     position: relative;
-    display: inline-block;
     font-weight: 500;
     font-size: 12px;
     line-height: 60px;
