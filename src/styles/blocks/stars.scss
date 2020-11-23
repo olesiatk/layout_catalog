@@ -1,5 +1,7 @@
 .stars {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 4px;
 
   &__item {
     background-image: url(./../images/star.svg);
@@ -7,7 +9,6 @@
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;
-    margin-right: 4px;
   }
 
   .stars--1 &__item:nth-child(-n+1),

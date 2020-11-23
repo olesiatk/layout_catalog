@@ -2,14 +2,13 @@
   &__block {
     padding: 0 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
   }
 
   &__logo {
-    display: flex;
+    display: grid;
     align-items: center;
-    object-fit: contain;
-    object-position: center;
   }
 }

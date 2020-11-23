@@ -1,13 +1,7 @@
 @import "stars";
 
-.container {
-  width: 200px;
-  height: 403px;
-}
-
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   padding: 15px 14px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
@@ -15,8 +9,6 @@
   &__photo {
     width: 160px;
     height: 134px;
-    object-position: center;
-    object-fit: contain;
     margin: 15px auto 30px;
   }
 
@@ -40,15 +32,17 @@
   }
 
   &__rate {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     align-items: center;
   }
 
   &__price {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: end;
     margin: 20px 0;
   }
 
