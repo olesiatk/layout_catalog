@@ -54,7 +54,7 @@
     margin: 0;
   }
 
-  &__button {
+  &__button-link {
     width: 170px;
     height: 40px;
     background: $linkColor;
@@ -65,22 +65,16 @@
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-  }
-
-  &__button-link {
     color: #fff;
     text-decoration: none;
     line-height: 40px;
   }
 
-  &__button:hover {
+  &__button-link:hover {
     background-color: #fff;
     border: 1px solid $linkColor;
     box-sizing: border-box;
     border-radius: 5px;
-  }
-
-  &__button-link:hover {
     color: $linkColor;
   }
 }
