@@ -19,6 +19,7 @@
     padding: 12px 0;
     border: 3px solid #fff;
     transition: transform 1s ease-in;
+    cursor: pointer;
   }
 
   &__photo:hover {
@@ -66,7 +67,7 @@
     margin: 0;
   }
 
-  &__button {
+  &__button-link {
     width: 170px;
     height: 40px;
     background: $linkColor;
@@ -77,21 +78,14 @@
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 1s;
-  }
-
-  &__button:hover {
-    background-color: #fff;
-  }
-
-  &__button-link {
     color: #fff;
     text-decoration: none;
     line-height: 40px;
-    transition: 1s;
+    transition: 0.5s;
   }
 
-  &__button:hover &__button-link {
+  &__button-link:hover {
+    background-color: #fff;
     color: $linkColor;
   }
 }
